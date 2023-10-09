@@ -1,5 +1,6 @@
 import Dialogbox from "@/components/dialogBox/dialogbox";
-import Flowchart from "@/components/flowChart/flow-chart";
+import Chatbox from "@/components/flowChart/Chatbox";
+import Flowchart from "@/components/flowchart2/Flowchart";
 import { useState } from "react";
 
 export default function App() {
@@ -15,11 +16,7 @@ export default function App() {
       <h1 className="text-center mb-4 text-2xl font-medium">FlowChart App</h1>
       <div className="grid grid-cols-3 gap-4">
         <div className="col-span-2">
-          <Flowchart
-            setOpen={setOpen}
-            nodeData={nodeData}
-            setNodeData={setNodeData}
-          />
+          <Flowchart />
         </div>
         <div className="col-span-1">
           {open && (
@@ -29,6 +26,9 @@ export default function App() {
               setOpen={setOpen}
             />
           )}
+        </div>
+        <div>
+          <Chatbox />
         </div>
       </div>
     </div>

@@ -202,8 +202,6 @@ const DnDFlow = ({ setOpen, nodeData, setNodeData }: NodeProps) => {
     restoreFlow();
   }, [setNodes, setEdges, setViewport]);
 
-  
-
   return (
     <div className="dndflow">
       <div className="reactflow-wrapper" ref={reactFlowWrapper}>

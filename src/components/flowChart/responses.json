@@ -1,0 +1,21 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "content": "Hello! What's your name?",
+      "nextNode": 2,
+      "isBot": true
+    },
+    {
+      "id": 2,
+      "content": "Thanks for sharing your name. Can I have your email?",
+      "nextNode": 3,
+      "isBot": true
+    },
+    {
+      "id": 3,
+      "content": "Thank you for providing your email.",
+      "isBot": true
+    }
+  ]
+}
